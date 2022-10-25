@@ -25,6 +25,35 @@ h6 {
 	font-family: "Raleway", sans-serif;
 }
 
+section {
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.section-bg {
+	background-color: #f8fbfe;
+}
+
+.section-title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.section-title h2 {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	color: #124265;
+}
+
+.section-title p {
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #919191;
+}
+
 /* ------------------------------------------------------------
  * AOS animation in mobile
  * --------------------------------------------------------- */
@@ -386,16 +415,16 @@ h6 {
 /* ------------------------------------------------------------
  * Principal
  * --------------------------------------------------------- */
-#main {
+#principal {
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	background: url("../img/main-bg.jpg") top center;
+	background: url("../img/principal-bg.jpg") top center;
 	background-size: cover;
 	position: relative;
 }
 
-#main:before {
+#principal:before {
 	content: "";
 	background: rgba(255, 255, 255, 0.8);
 	position: absolute;
@@ -405,11 +434,11 @@ h6 {
 	right: 0;
 }
 
-#main .container {
+#principal .container {
 	padding-top: 80px;
 }
 
-#main h1 {
+#principal h1 {
 	margin: 0;
 	font-size: 56px;
 	font-weight: 700;
@@ -418,13 +447,13 @@ h6 {
 	font-family: "Poppins", sans-serif;
 }
 
-#main h2 {
+#principal h2 {
 	color: #5e5e5e;
 	margin: 10px 0 0 0;
 	font-size: 22px;
 }
 
-#main .btn-get-started {
+#principal .btn-get-started {
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-size: 14px;
@@ -438,15 +467,15 @@ h6 {
 	background: #2487ce;
 }
 
-#main .btn-get-started:hover {
+#principal .btn-get-started:hover {
 	background: #3194db;
 }
 
-#main .icon-boxes {
+#principal .icon-boxes {
 	margin-top: 100px;
 }
 
-#main .icon-box {
+#principal .icon-box {
 	padding: 50px 30px;
 	position: relative;
 	overflow: hidden;
@@ -457,24 +486,24 @@ h6 {
 	z-index: 1;
 }
 
-#main .icon-box .title {
+#principal .icon-box .title {
 	font-weight: 700;
 	margin-bottom: 15px;
 	font-size: 18px;
 }
 
-#main .icon-box .title a {
+#principal .icon-box .title a {
 	color: #124265;
 	transition: 0.3s;
 }
 
-#main .icon-box .description {
+#principal .icon-box .description {
 	font-size: 15px;
 	line-height: 28px;
 	margin-bottom: 0;
 }
 
-#main .icon-box .icon {
+#principal .icon-box .icon {
 	margin-bottom: 20px;
 	padding-top: 10px;
 	display: inline-block;
@@ -484,37 +513,37 @@ h6 {
 	color: #2487ce;
 }
 
-#main .icon-box:hover {
+#principal .icon-box:hover {
 	transform: scale(1.08);
 }
 
-#main .icon-box:hover .title a {
+#principal .icon-box:hover .title a {
 	color: #2487ce;
 }
 
 @media (min-width: 1024px) {
-	#main {
+	#principal {
 		background-attachment: fixed;
 	}
 }
 
 @media (max-height: 800px) {
-	#main {
+	#principal {
 		height: auto;
 	}
 }
 
 @media (max-width: 992px) {
-	#main {
+	#principal {
 		height: auto;
 	}
 
-	#main h1 {
+	#principal h1 {
 		font-size: 28px;
 		line-height: 36px;
 	}
 
-	#main h2 {
+	#principal h2 {
 		font-size: 18px;
 		line-height: 24px;
 	}
