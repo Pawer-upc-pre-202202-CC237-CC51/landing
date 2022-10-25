@@ -1,5 +1,6 @@
 (function() {
 	"use strict";
+
 	/**
 	 * Chore
 	 */
@@ -12,33 +13,60 @@
 	}
 
 	const on = (type, el, listener, all = false) => {
-		let selectEl = select(el, all)
+		let selectEl = select(el, all);
 		if (selectEl) {
 			if (all) {
-				selectEl.forEach(e => e.addEventListener(type, listener))
+				selectEl.forEach(e => e.addEventListener(type, listener));
 			} else {
-				selectEl.addEventListener(type, listener)
+				selectEl.addEventListener(type, listener);
 			}
 		}
 	}
 
 	const onscroll = (el, listener) => {
-		el.addEventListener('scroll', listener)
+		el.addEventListener('scroll', listener);
 	}
 
 	/**
 	 * Back-To-Top
 	 */
-	let backtotop = select('.back-to-top')
+	let backtotop = select('.back-to-top');
 	if (backtotop) {
 		const toggleBacktotop = () => {
 			if (window.scrollY > 100) {
-				backtotop.classList.add('active')
+				backtotop.classList.add('active');
 			} else {
-				backtotop.classList.remove('active')
+				backtotop.classList.remove('active');
 			}
 		}
-		window.addEventListener('load', toggleBacktotop)
-		onscroll(document, toggleBacktotop)
+		window.addEventListener('load', toggleBacktotop);
+		onscroll(document, toggleBacktotop);
 	}
+
+	/**
+	 * Preloader
+	 */
+	let preloader = select('#preloader');
+	if (preloader) {
+		window.addEventListener('load', () => {
+			preloader.remove();
+		});
+	}
+
+	/**
+	 * AOS
+	 */
+	window.addEventListener('load', () => {
+		AOS.init({
+			duration: 1000,
+			easing: 'ease-in-out',
+			once: true,
+			mirror: false,
+		});
+	});
+
+	/**
+	 * PureCounter
+	 */
+	new PureCounter();
 })();
