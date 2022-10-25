@@ -1,0 +1,37 @@
+# Hidden files
+# -----------------------------------
+._*
+*~
+.~lock.*
+
+# Temp files
+# -----------------------------------
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+.coverage
+ehthumbs.db
+Thumbs.db
+tsconfig.tsbuildinfo
+
+# IDE files
+# -----------------------------------
+.buildpath
+.idea
+.project
+.settings
+.vscode
+nbproject
+.prettierrc
+
+# Local files
+# -----------------------------------
+.env
+
+# Vendor files
+# -----------------------------------
+node_modules
+vendor
+build
+npm-shrinkwrap.json
