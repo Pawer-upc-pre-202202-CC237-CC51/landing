@@ -31,10 +31,10 @@ Pawme es una aplicación donde un usuario puede publicar mascotas en adopción, 
 
 ## Segmentos objetivo
 
-### Albergues de mascotas: 
+### Albergues de mascotas:
 Son locales ubicados en diferentes partes de la ciudad donde se provee techo, alimentación, abrigo y seguridad a las mascotas encontradas en las calles.
 
-### Adoptantes responsables: 
+### Adoptantes responsables:
 Personas que cuentan con smartphones en la mano que están dispuestos a adoptar mascotas en grupos de facebook donde se publican animales que se encuentran en la calle sin dueño alguno.
 
 ---
@@ -42,7 +42,7 @@ Personas que cuentan con smartphones en la mano que están dispuestos a adoptar 
 
 - La app permite al usuario administrar sus publicaciones, ya sea adopción o animales perdidos.
 
-- La app permitira filtrar para realizar la busqueda de animales por ciertas características como especie, raza, edad. 
+- La app permitira filtrar para realizar la busqueda de animales por ciertas características como especie, raza, edad.
 
 - Los usuarios de albergue podran administrar un catalogo de animales que cuidan, así como poder indicar el estado de tales animales.
 
