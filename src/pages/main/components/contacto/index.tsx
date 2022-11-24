@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-redundant-roles */
 import React from 'react';
 import "./style.css";
 
@@ -13,7 +14,7 @@ export const Contacto: React.FC<ContactoProps> = () => {
 				</div>
 
 				<div>
-					<iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.124649895739!2d-76.96531668457038!3d-12.103618146257629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c71b74419515%3A0x35b9021e227d4282!2sUPC%20monterrico!5e0!3m2!1sen!2sus!4v1664467573003!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+					<iframe style={{border: 0, width: "100%", height: "270px"}} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.124649895739!2d-76.96531668457038!3d-12.103618146257629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c71b74419515%3A0x35b9021e227d4282!2sUPC%20monterrico!5e0!3m2!1sen!2sus!4v1664467573003!5m2!1sen!2sus" frameBorder={0} title="googlemaps" allowFullScreen></iframe>
 				</div>
 
 				<div className="row mt-5">
@@ -47,17 +48,17 @@ export const Contacto: React.FC<ContactoProps> = () => {
 						<form action="#" method="post" role="form" className="php-email-form">
 							<div className="row">
 								<div className="col-md-6 form-group">
-									<input type="text" name="name" className="form-control" id="name" placeholder="Nombre" required>
+									<input type="text" name="name" className="form-control" id="name" placeholder="Nombre" required />
 								</div>
 								<div className="col-md-6 form-group mt-3 mt-md-0">
-									<input type="email" className="form-control" name="email" id="email" placeholder="Correo" required>
+									<input type="email" className="form-control" name="email" id="email" placeholder="Correo" required />
 								</div>
 							</div>
 							<div className="form-group mt-3">
-								<input type="text" className="form-control" name="subject" id="subject" placeholder="Titulo" required>
+								<input type="text" className="form-control" name="subject" id="subject" placeholder="Titulo" required />
 							</div>
 							<div className="form-group mt-3">
-								<textarea className="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+								<textarea className="form-control" name="message" rows={5} placeholder="Mensaje" required></textarea>
 							</div>
 							<div className="my-3">
 								<div className="loading">Loading</div>
