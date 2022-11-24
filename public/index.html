@@ -32,6 +32,27 @@
 	<script src="%PUBLIC_URL%/vendorsrc/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="%PUBLIC_URL%/vendorsrc/isotope-layout/isotope.pkgd.min.js"></script>
 	<script src="%PUBLIC_URL%/vendorsrc/swiper/swiper-bundle.min.js"></script>
+	<script>
+		(function () {
+			"use strict";
+			/**
+			 * AOS
+			 */
+			window.addEventListener('load', () => {
+				AOS.init({
+					duration: 1000,
+					easing: 'ease-in-out',
+					once: true,
+					mirror: false,
+				});
+			});
+
+			/**
+			 * PureCounter
+			 */
+			new PureCounter();
+		})();
+	</script>
 </body>
 
 </html>
