@@ -1,0 +1,146 @@
+/* ------------------------------------------------------------
+ * General
+ * --------------------------------------------------------- */
+ body {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+
+a {
+	color: #2487ce;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #469fdf;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+section {
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.section-bg {
+	background-color: #f8fbfe;
+}
+
+.section-title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.section-title h2 {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	color: #124265;
+}
+
+.section-title p {
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #919191;
+}
+
+/* ------------------------------------------------------------
+ * AOS animation in mobile
+ * --------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+	[data-aos-delay] {
+		transition-delay: 0 !important;
+	}
+}
+
+/* ------------------------------------------------------------
+ * Preloader
+ * --------------------------------------------------------- */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	overflow: hidden;
+	background: #fff;
+}
+
+#preloader:before {
+	content: "";
+	position: fixed;
+	top: calc(50% - 30px);
+	left: calc(50% - 30px);
+	border: 6px solid #2487ce;
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: animate-preloader 1s linear infinite;
+	animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes animate-preloader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* ------------------------------------------------------------
+ * Back-To-Top
+ * --------------------------------------------------------- */
+.back-to-top {
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	right: 15px;
+	bottom: 15px;
+	z-index: 996;
+	background: #2487ce;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	transition: all 0.4s;
+}
+
+.back-to-top i {
+	font-size: 28px;
+	color: #fff;
+	line-height: 0;
+}
+
+.back-to-top:hover {
+	background: #3e9bdd;
+	color: #fff;
+}
+
+.back-to-top.active {
+	visibility: visible;
+	opacity: 1;
+}
